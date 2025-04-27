@@ -1,0 +1,345 @@
+<!-- Link para o CSS do Bootstrap -->
+<link rel="stylesheet" href="./static/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="./static/css/style.css">
+
+<!-- Scripts do Bootstrap e dependências -->
+<script src="./static/js/jquery-3.2.1.slim.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<!-- <link href="./static/css/bootstrap.min.css" rel="stylesheet"> -->
+<script src="./static/js/bootstrap.bundle.min.js"></script>
+
+<!-- Conteúdo HTML com classes do Bootstrap -->
+<div class="position-relative overflow-hidden text-center">
+    <div class="col-12 container-ayrton">
+        <div class="col-12 overlay-titulo">
+            <h1 class="display-3 fw-bold">Tempo de Reação</h1>
+            <h3 class="fw-normal mb-3">O Milésimo de Segundo que Muda Tudo</h3>
+        </div>
+    </div>
+</div>
+
+<div class="separador container col-12">
+</div>
+
+<div class="container corpo">
+    <div class="row">
+
+        <div class="col-6 text-center">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Como posso melhorar meu tempo de reação?</h2>
+                <br>
+                <p class="lead">
+
+                    Com hábitos mais saudáveis!
+                </p>
+                <p class="lead">
+                    Para ter uma alta performance, é necessário ter hábitos mais saudáveis como: <b>dormir melhor</b>,
+                    <b>tomar menos café</b> e ter uma <b>rotina menos estressante</b>
+                </p>
+            </div>
+            <div class="col-12 academia">
+
+                <img src="./static/media/Academia.jpg" alt="Fluxograma">
+                </p>
+            </div>
+        </div>
+
+        <div class="col-6 text-center">
+            <div class="my-3 p-3">
+                <h2 class="display-5">De onde vêm esses números?</h2>
+                <br>
+                <p class="lead">
+                    Este painel foi construído com base em um estudo público sobre desempenho cognitivo humano
+                    disponível no Kaggle (Human Cognitive Performance Analysis).
+                </p>
+
+                <p class="lead">
+                    O dataset reúne informações de <b>80.000 pessoas</b>, com dados sobre:
+                </p>
+
+            </div>
+            <div class="bg-orange shadow-sm mx-auto" style="border-radius: 21px 21px 0 0;">
+                <p class="lead topico">
+                    - Teste de tempo de reação
+                </p>
+
+                <p class="lead topico">
+                    - Nível de estresse, sono e tempo de tela
+                </p>
+
+                <p class="lead topico">
+                    - Consumo de cafeína e frequência de exercícios
+                </p>
+
+
+                <p class="lead topico">
+                    - E até teste de memória
+                </p>
+
+                <p class="lead topico">
+                    Então não é só uma tela bonita: são <b>dados reais</b>, <b>pessoas reais</b>, <b>comportamentos
+                        reais</b> — revelando o que ajuda (ou atrapalha) sua mente no dia a dia.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 text-center overflow-hidden fluxograma ">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Antes de tudo, como organizamos nossos dados?</h2>
+                <img src="./static/media/Fluxograma.png" class="imagem-fluxo" alt="Fluxograma">
+            </div>
+        </div>
+
+        <div class="col-12 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Mas o que os nossos dados nos mostram?</h2>
+                <p class="lead" style="background-color: #f0971c;">Como arrumamos as informações</p>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample">
+                    Veja o gráfico de dispersão!
+                </button>
+                <br>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body dispersao img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/grafico_dispersao.png" alt="Gráfico dispersão">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="col-12">
+                    <p class="lead">Correlação entre os dados</p>
+                    <div class="row">
+                        <div class="col-4 dispersao img-container" onclick="this.classList.toggle('expanded')">
+                            <p class="lead">Numérico x Categórico</p>
+                            <img src="./static/media/razao_corr.png" alt="Gráfico de correlacao">
+                        </div>
+                        <div class="col-4 dispersao img-container" onclick="this.classList.toggle('expanded')">
+                            <p class="lead">Matriz de associação categórica</p>
+                            <img src="./static/media/matriz_categorica.png" alt="Gráfico de correlacao">
+                        </div>
+                        <div class="col-4 dispersao img-container" onclick="this.classList.toggle('expanded')">
+                            <p class="lead">Correlação de Spearman</p>
+                            <img src="./static/media/spearman.png" alt="Gráfico de correlacao">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 text-center overflow-hidden fluxograma">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Simulações de aleatoriedade</h2>
+                <p class="lead">Tabela de significância</p>
+                <div class="col-12 img-container" onclick="this.classList.toggle('expanded')">
+                    <img src="./static/media/significancia.png" style="width: 60%;" alt="Gráfico de significancia">
+                </div>
+            </div>
+            <div class="bg-body-tertiary shadow-sm mx-auto col-12" style="width: 80%; border-radius: 21px 21px 0 0;">
+
+                <!-- <div class="col-12"> -->
+                <p style="color: #cc3e18;">Distribuições</p>
+                <div class="row">
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/grafico-1.png" alt="Gráfico de correlacao">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/grafico-2.png" alt="Gráfico de correlacao">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/grafico-3.png" alt="Gráfico de correlacao">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/grafico-4.png" alt="Gráfico de correlacao">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/grafico-5.png" alt="Gráfico de correlacao">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/grafico-6.png" alt="Gráfico de correlacao">
+                    </div>
+                </div>
+                <!-- </div> -->
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Clusters</h2>
+                <p class="lead">Método do cotovelo</p>
+                <div class="col-12 img-container" onclick="this.classList.toggle('expanded')">
+                    <img src="./static/media/cotovelo.png" style="width: 30%;" alt="Cotovelo">
+                </div>
+            </div>
+            <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; border-radius: 21px 21px 0 0;">
+                <p style="color: #cc3e18;">Gráfico de clusterização</p>
+                <div style="align-items: center;">
+                    <div class="col-6 img-container" onclick="this.classList.toggle('expanded')">
+                        <img src="./static/media/clusters.png" alt="Clusterização">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12 text-center overflow-hidden fluxograma">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Vamos entender melhor nossos clusters:</h2>
+                <div class="col-12 descrevendo-clusters">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="lead topico">
+                                Cluster 0 – Jovens Ocupados
+                            </h3>
+            
+                            <p class="lead topico">
+                                Idade: pico em torno de 20–25 anos
+                                <br>
+                                Sono: moderado (7–8 h)
+                                <br>
+                                Estresse: muito alto (pico em 9–10)
+                                <br>
+                                Tela diária: baixo (≈2 h)
+                                <br>
+                                Cafeína: consumo moderado (≈300 mg/dia)
+                                <br>
+                                Reação: tempo médio a rápido (≈350 ms)
+                                <br>
+                                Memória: desempenho muito alto (≈95–100)
+                            </p>
+            
+                            <p class="lead topico">
+                                Interpretação: jovens que dormem razoavelmente, mas apresentam elevado estresse e contam com boa capacidade de memória—talvez universitários ou profissionais sob forte pressão.
+                            </p>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="lead topico">
+                                Cluster 1 – Veteranos com tempo livre
+                            </h3>
+            
+                            <p class="lead topico">
+                                Idade: pico em torno de 50–60 anos
+                                <br>
+                                Sono: meio (≈6 h)
+                                <br>
+                                Estresse: muito baixo (≈1–2)
+                                <br>
+                                Tela diária: muito alta (≈12 h)
+                                <br>
+                                Cafeína: consumo baixo (≈100 mg/dia)
+                                <br>
+                                Reação: médio-lento (≈450 ms)
+                                <br>
+                                Memória: desempenho baixo (≈45–55)
+                            </p>
+            
+                            <p class="lead topico">
+                                Interpretação: adultos mais velhos, com rotina tranquila (baixo estresse), mas passam muito tempo em frente às telas — provável perfil mais sedentário/digital.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="lead topico">
+                                Cluster 2 – Jovens Cafeinados
+                            </h3>
+            
+                            <p class="lead topico">
+                                Idade: pico em torno de 25–30 anos
+                                <br>
+                                Sono: baixo (≈5 h)
+                                <br>
+                                Estresse: moderado (≈2–4)
+                                <br>
+                                Tela diária: moderado-alto (≈8 h)
+                                <br>
+                                Cafeína: consumo muito alto (≈500 mg/dia)
+                                <br>
+                                Reação: mais lenta (≈600 ms)
+                                <br>
+                                Memória: desempenho bom (≈80–90)
+                            </p>
+            
+                            <p class="lead topico">
+                                Interpretação: jovens que dormem pouco, compensam com muita cafeína, mas têm tempos de reação mais longos—perfil “bombardeado” de estimulantes.
+                            </p>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="lead topico">
+                                Cluster 3 – Veteranos Ágeis
+                            </h3>
+            
+                            <p class="lead topico">
+                                Idade: pico em torno de 35–45 anos
+                                <br>
+                                Sono: alto (≈9 h)
+                                <br>
+                                Estresse: moderado (≈4–6)
+                                <br>
+                                Tela diária: baixo-moderado (≈3–4 h)
+                                <br>
+                                Cafeína: consumo baixo (≈100 mg/dia)
+                                <br>
+                                Reação: mais rápido (≈250 ms)
+                                <br>
+                                Memória: desempenho médio (≈60–70)
+                            </p>
+            
+                            <p class="lead topico">
+                                Interpretação: adultos de meia-idade que dormem bem e apresentam tempos de reação rápidos, embora não alcancem os picos de memória dos Cluster 0.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCluster">
+                    Veja os gráficos completos :D
+                </button>
+            </div>
+
+            <div id="collapseCluster" class="bg-body-tertiary collapse shadow-sm mx-auto col-12" style="width: 80%; border-radius: 21px 21px 0 0;">
+
+                <p style="color: #cc3e18;">Correlações</p>
+                <div class="row">
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded-final')">
+                        <img src="./static/media/grafico-cluster-1.png" alt="Gráfico Cluster">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded-final')">
+                        <img src="./static/media/grafico-cluster-2.png" alt="Gráfico Cluster">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded-final')">
+                        <img src="./static/media/grafico-cluster-3.png" alt="Gráfico Cluster">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded-final')">
+                        <img src="./static/media/grafico-cluster-4.png" alt="Gráfico Cluster">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded-final')">
+                        <img src="./static/media/grafico-cluster-5.png" alt="Gráfico Cluster">
+                    </div>
+                    <div class="col-4 img-container" onclick="this.classList.toggle('expanded-final')">
+                        <img src="./static/media/grafico-cluster-6.png" alt="Gráfico Cluster">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 img-container" onclick="this.classList.toggle('expanded-final')">
+                        <img src="./static/media/grafico-cluster-4.png" alt="Gráfico Cluster">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>

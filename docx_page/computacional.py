@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import hydralit_components as hc
+# import hydralit_components as hc
 from machine_learning_algorithm import model
 from funcoes import valores_categoricos, return_values
 # Carregando os dados

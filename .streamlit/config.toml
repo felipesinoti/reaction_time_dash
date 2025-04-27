@@ -1,6 +1,9 @@
 [theme]
-primaryColor="#4073ca"
-backgroundColor="#ffffff"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#000000"
+primaryColor="#FFFFFF"
+backgroundColor="#181419"
+secondaryBackgroundColor="#f0971c"
+textColor="#FFFFFF"
 font="sans serif"
+enableStaticServing = true
+[ui]
+wideMode = true
