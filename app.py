@@ -17,14 +17,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.markdown("<style>body,.card-body{background-color:#181419;color:#fff}h2,h3{color:#f0971c;font-weight:bolder}h3.fw-normal{color:#fff!important}b{background-color:#f0971c}.academia img{box-shadow:0 10px 20px rgba(0,0,0,0.25);border-radius:12px;transition:transform .3s ease,box-shadow .3s ease;width:75%}.academia img:hover{transform:translateY(-5px);box-shadow:0 15px 25px rgba(0,0,0,0.3)}.container-ayrton{background-image:url(./../../static/media/Ayrton.png);background-repeat:space;background-position:center;padding:0 100px 200px;background-size:100%;position:relative;color:#1814195e}.overlay-titulo{background-color:#1814195e;padding:1rem 2rem;color:#fff}.overlay-titulo h1{font-size:3rem}.overlay-titulo h3{font-weight:400}.overlay-titulo h1,.overlay-titulo h3{text-shadow:1px 1px 3px rgba(0,0,0,0.6)}.separador{margin-bottom:10px}.container.corpo{margin:0;display:inline}.fluxograma{background-color:#f0971c}.fluxograma h2{color:#fff}.fluxograma p.lead{color:#cc3e18;background:#fff}.</style>", unsafe_allow_html=True)
-
-css_url = "https://raw.githubusercontent.com/felipesinoti/reaction_time_dash/main/static/css/bootstrap.min.css"
-response = requests.get(css_url)
-
-if response.status_code == 200:
-    st.markdown(f"<style>{response.text}</style>", unsafe_allow_html=True)
-
 # Website's general configurations
 arquivo = 'page.html'
 
