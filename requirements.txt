@@ -77,3 +77,4 @@ watchdog==6.0.0
 xlrd==1.2.0
 XlsxWriter==3.2.3
 zipp==3.21.0
+mpld3
